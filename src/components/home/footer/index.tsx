@@ -139,7 +139,7 @@ export const Footer: React.FC = () => {
             display: 'flex',
             flexDirection: {
               xs: 'column',
-              md: 'row',
+              lg: 'row',
             },
             justifyContent: {
               xs: 'flex-start',
