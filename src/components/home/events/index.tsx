@@ -25,7 +25,7 @@ export const OngoingEvents: React.FC = () => {
       description: '16:00 GMT daily',
     },
   ];
-  const isTablet = useMediaQuery(theme.breakpoints.down('md'));
+  const isTablet = useMediaQuery(theme.breakpoints.down('lg'));
   const isLaptop = useMediaQuery(theme.breakpoints.up('lg'));
   return (
     <Box
@@ -36,7 +36,7 @@ export const OngoingEvents: React.FC = () => {
         margin: '0 auto',
         height: {
           xs: 'auto',
-          md: '774px',
+          lg: '774px',
         },
         display: 'flex',
         flexDirection: 'column',
@@ -148,7 +148,7 @@ export const OngoingEvents: React.FC = () => {
                 fontSize: '14px',
                 marginTop: {
                   xs: '32.4px',
-                  md: '0',
+                  lg: '0',
                 },
               }}
             >
@@ -166,7 +166,7 @@ export const OngoingEvents: React.FC = () => {
                 marginBottom: '24px',
                 width: {
                   xs: '310px',
-                  lg: '500px',
+                  md: '500px',
                 },
                 color: theme.palette.commonColors.gray800,
               }}
@@ -212,7 +212,7 @@ export const OngoingEvents: React.FC = () => {
                 width: '140px',
                 marginBottom: {
                   xs: '33px',
-                  md: '0',
+                  lg: '0',
                 },
               }}
               endIcon={<PlayIcon />}
