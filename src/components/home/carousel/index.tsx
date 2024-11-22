@@ -239,16 +239,16 @@ export const Testimonial: React.FC = () => {
               alt='left-blue'
               style={{
                 position: 'absolute',
-                top: isTablet ? '5px' : '0',
-                right: isTablet ? '-40px' : '0',
+                top: isBtw ? '0' : '5px',
+                right: isBtw ? '-20px' : '-40px',
               }}
             />
             <img
               src={CenterWhite.src}
               style={{
                 position: 'absolute',
-                bottom: isTablet ? '-90px' : '0px',
-                right: isTablet ? '-40px' : '0',
+                bottom: isBtw ? '0px' : '-90px',
+                right: isBtw ? '0' : '-40px',
               }}
               alt='left-white'
             />
