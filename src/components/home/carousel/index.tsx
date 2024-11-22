@@ -23,6 +23,7 @@ export const Testimonial: React.FC = () => {
   const theme = useTheme();
   const isTablet = useMediaQuery(theme.breakpoints.down('lg'));
   const isLaptop = useMediaQuery(theme.breakpoints.up('xl'));
+  const isBtw = useMediaQuery(theme.breakpoints.up('lg'));
   return (
     <Box
       sx={{
@@ -61,7 +62,7 @@ export const Testimonial: React.FC = () => {
               padding: '0',
             }}
           >
-            {isLaptop ? <ArrowLeft /> : <ArrowLeftSmall />}
+            {isBtw ? <ArrowLeft /> : <ArrowLeftSmall />}
           </IconButton>
           <Typography
             sx={{
@@ -81,7 +82,7 @@ export const Testimonial: React.FC = () => {
               padding: '0',
             }}
           >
-            {isLaptop ? <ArrowRight /> : <ArrowRightSmall />}
+            {isBtw ? <ArrowRight /> : <ArrowRightSmall />}
           </IconButton>
         </Box>
         <Box
