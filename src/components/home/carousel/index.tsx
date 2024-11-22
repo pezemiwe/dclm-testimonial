@@ -22,7 +22,6 @@ import QuoteBig from '@/assets/svgs/quote-big.svg';
 export const Testimonial: React.FC = () => {
   const theme = useTheme();
   const isTablet = useMediaQuery(theme.breakpoints.down('lg'));
-  const isLaptop = useMediaQuery(theme.breakpoints.up('xl'));
   const isBtw = useMediaQuery(theme.breakpoints.up('lg'));
   return (
     <Box
